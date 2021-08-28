@@ -14,12 +14,7 @@
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e"
-        ],
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
         "accessToken": "MmU0NTA5NjctYWY2Ny00MWE0LTk2NDctOTQ5Yjg1ZDNiNjU2fHJlYWQtd3JpdGU="
       }
     }
@@ -38,9 +33,14 @@
     },
     "baufi24-disclaimer-e2e": {
       "tags": [],
-      "implicitDependencies": [
-        "baufi24-disclaimer"
-      ]
+      "implicitDependencies": ["baufi24-disclaimer"]
+    },
+    "video": {
+      "tags": []
+    },
+    "video-e2e": {
+      "tags": [],
+      "implicitDependencies": ["video"]
     }
   }
 }

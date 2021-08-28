@@ -131,3 +131,11 @@ summary {
   width: 16px;
   margin-right: 4px;
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100vw;
+  object-fit: fill;
+}
