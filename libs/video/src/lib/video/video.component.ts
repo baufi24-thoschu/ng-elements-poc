@@ -23,6 +23,7 @@ export class VideoComponent implements OnInit {
   }
 
   public onClick(): void {
+    console.log('onClick');
     this.emitOutput.emit(this.info);
   }
 }

@@ -135,9 +135,9 @@
     </pre>
   </details>
   <baufi24-ng-elements-video [info]="currentInfo" (emitOutput)='displayOutput($event)'></baufi24-ng-elements-video>
-  <picture>
+  <picture (click)='handleClick($event)'>
     <source media='(min-width:1600px)' srcset='https://www.w3schools.com/tags/img_pink_flowers.jpg'>
     <source media='(min-width:1000px)' srcset='https://www.w3schools.com/tags/img_white_flower.jpg'>
-    <img class='center' src='https://www.w3schools.com/tags/img_orange_flowers.jpg' alt='Flowers' style='width:auto;'>
+    <img #flowerImg class='center' src='https://www.w3schools.com/tags/img_orange_flowers.jpg' alt='Flowers' style='width:auto;'>
   </picture>
 </main>

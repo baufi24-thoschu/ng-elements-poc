@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Placeholder, prop } from 'ramda';
 
 @Component({
   selector: 'baufi24-ng-elements-root',
@@ -9,12 +10,24 @@ export class AppComponent {
   public title: string;
   public currentInfo: string;
 
+  @Input()
+  public items = [{desc: 'Eat burger', id: 1}];
+
+  @Output()
+  public itemClicked: EventEmitter<string>;
+
   constructor() {
     this.title = 'baufi24-disclaimer';
     this.currentInfo = 'Moin Leute...';
+    this.itemClicked = new EventEmitter<string>();
   }
 
-  displayOutput(value: string) {
+  public displayOutput(value: string): void {
     console.log(value);
+  }
+
+  public handleClick(element: Event): void {
+    const eventTarget: HTMLImageElement = element.target as HTMLImageElement;
+    this.itemClicked.emit(prop('currentSrc', eventTarget));
   }
 }
