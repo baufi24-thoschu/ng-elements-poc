@@ -1,7 +1,7 @@
 # Baufi24NgElements
 
 <p style="text-align: center;">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Offical_Baufi24_Logo_released_2020.svg/375px-Offical_Baufi24_Logo_released_2020.svg.png" width="100vw">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Offical_Baufi24_Logo_released_2020.svg/2560px-Offical_Baufi24_Logo_released_2020.svg.png" width="100vw">
 </p>
 
 This project was generated using [Nx](https://nx.dev)
