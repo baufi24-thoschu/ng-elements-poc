@@ -92,7 +92,7 @@ export class AppModule implements DoBootstrap {
 
 ````
 
-## Development server
+## ⚓ Development server
 
 Run `npx run serve:webcomponent` for a dev server.
 
