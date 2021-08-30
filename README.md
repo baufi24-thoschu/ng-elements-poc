@@ -80,7 +80,7 @@ import { AppComponent } from './app.component';
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, VideoModule],
-  exports: [AppComponent],
+  // exports: [AppComponent],
   providers: [],
   // bootstrap: [AppComponent]
 })
