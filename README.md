@@ -10,9 +10,9 @@ This project was generated using [Nx](https://nx.dev)
 
 Run:  `npm ci`
 
-      `ng build`
+      ng build
       
-      `npm run serve:webcomponent`
+      npm run serve:webcomponent
 
 ## Generate a workspace
 
