@@ -1,4 +1,4 @@
-# ⚓ Baufi24NgElements
+# Baufi24NgElements by ⚓
 
 <p style="text-align: center;">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Offical_Baufi24_Logo_released_2020.svg/2560px-Offical_Baufi24_Logo_released_2020.svg.png" width="100%">
