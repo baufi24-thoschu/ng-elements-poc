@@ -6,9 +6,9 @@ name: CI-Production-Pipeline Production [Main]
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
+    branches: [ master, preview, etc ]
   pull_request:
-    branches: [ main ]
+    branches: [ master, preview, etc ]
   release:
     types: [ created ]
   schedule:
@@ -48,7 +48,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # Weather App
+      # Weather App-Test
       - name: Get Weather
         run: |
           curl -s --url 'https://api.openweathermap.org/data/2.5/weather?q=Budapest&appid=${{ secrets.OPENWEATHERMAP_TOKEN }}&units=metric'
