@@ -9,7 +9,10 @@ This project was generated using [Nx](https://nx.dev)
 ## Quickstart
 
 Run:  `npm ci`
+
       `ng build`
+      
+      `npm run serve:webcomponent`
 
 ## Generate a workspace
 
