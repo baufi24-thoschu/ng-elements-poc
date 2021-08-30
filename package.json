@@ -14,7 +14,8 @@
     "serve:webcomponent": "npx http-server ./dist/apps/baufi24-disclaimer",
     "serve:webcomponent:ssl": "npx http-server ./dist/custom-list -o -a localhost --ssl -K localhost-key.pem -C localhost.pem",
     "storybook:video": "npx ng run video:storybook",
-    "clean:dist": "rimraf dist"
+    "clean:dist": "rimraf dist",
+    "clean:node_modules": "rimraf node_modules"
   },
   "private": true,
   "dependencies": {
