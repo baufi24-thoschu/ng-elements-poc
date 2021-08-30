@@ -6,6 +6,14 @@
 
 This project was generated using [Nx](https://nx.dev)
 
+## Quickstart
+
+Run:  `npm ci`
+
+      `ng build`
+      
+      `npm run serve:webcomponent`
+
 ## Generate a workspace
 
 Run: `npx create-nx-workspace baufi24-ng-elements --preset=angular` generated the nx-workspace.
