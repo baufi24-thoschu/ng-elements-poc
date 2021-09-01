@@ -1,4 +1,4 @@
-# Baufi24NgElements ⚓
+# ⚓ Baufi24NgElements ⚓
 
 <p style="text-align: center;">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Offical_Baufi24_Logo_released_2020.svg/2560px-Offical_Baufi24_Logo_released_2020.svg.png" width="100%">
@@ -100,7 +100,7 @@ export class AppModule implements DoBootstrap {
 
 ````
 
-## ⚓ Development server
+## Development server
 
 Run `npx run serve:webcomponent` for a dev server.
 
@@ -116,3 +116,6 @@ Run `npx ng g storybook-configuration video` generated the storybook-configurati
 
 Run `npx ng run video:storybook` for storybook server. Navigate to address shown.
 
+## Further informations
+
+[In terms of: `npm run serve:webcomponent:ssl`](https://github.com/FiloSottile/mkcert)
