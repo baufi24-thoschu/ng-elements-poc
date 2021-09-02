@@ -20,7 +20,7 @@
     "test:e2e:baufi24-disclaimer": "ng e2e baufi24-disclaimer-e2e",
     "test:e2e:video": "ng e2e video-e2e",
     "ci:e2e": "npm run ci:e2e:video && npm run ci:e2e:baufi24-disclaimer",
-    "ci:e2e:baufi24-disclaimer": "ng e2e baufi24-disclaimer-e2e --headless",
+    "ci:e2e:baufi24-disclaimer": "ng e2e baufi24-disclaimer-e2e",
     "ci:e2e:video": "ng e2e video-e2e --headless",
     "serve": "npx -p @angular/cli ng serve",
     "serve:webcomponent": "npx http-server ./dist/apps/baufi24-disclaimer",
