@@ -4,8 +4,11 @@ name: RELEASE ❗ [Staging]
 
 # Controls when the workflow will run
 on:
-  pull_request:
+  push:
     branches: [ release ]
+
+  pull_request:
+    branches: [ feature/** ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
