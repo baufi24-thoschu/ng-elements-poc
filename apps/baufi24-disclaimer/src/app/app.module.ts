@@ -17,6 +17,7 @@ import { AppComponent } from './app.component';
 })
 export class AppModule implements DoBootstrap {
   private static readonly zeroElementsInHTMLCollection = 0;
+
   private static readonly customElementName = 'baufi24-disclaimer';
   private readonly ngCustomElement: NgElementConstructor<AppComponent>;
 
