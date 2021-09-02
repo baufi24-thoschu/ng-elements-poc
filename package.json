@@ -1,7 +1,11 @@
 {
   "name": "baufi24-ng-elements",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
+  "main": "./dist/apps/baufi24-disclaimer/baufi24-disclaimer.js",
+  "bin": {
+    "baufi24-disclaimer": "./dist/apps/baufi24-disclaimer/baufi24-disclaimer.js"
+  },
   "scripts": {
     "ng": "nx",
     "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2015 browser module main",
@@ -10,7 +14,8 @@
     "build:baufi24-disclaimer:production": "ng build baufi24-disclaimer --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "nx test",
-    "serve": "npx ng serve",
+    "test:e2e": "nx e2e baufi24-disclaimer-e2e",
+    "serve": "npx -p @angular/cli ng serve",
     "serve:webcomponent": "npx http-server ./dist/apps/baufi24-disclaimer",
     "serve:webcomponent:ssl": "npx http-server ./dist/custom-list -o -a localhost --ssl -K localhost-key.pem -C localhost.pem",
     "storybook:video": "npx ng run video:storybook",
