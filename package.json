@@ -18,6 +18,8 @@
     "test:e2e": "npm run test:e2e:video && npm run test:e2e:baufi24-disclaimer",
     "test:e2e:baufi24-disclaimer": "ng e2e baufi24-disclaimer-e2e --record --key b12a5de1-cce4-4237-a0de-e70ca28c2f4c",
     "test:e2e:video": "ng e2e video-e2e --record --key b12a5de1-cce4-4237-a0de-e70ca28c2f4c",
+    "test:e2e:baufi24-disclaimer:skip-nx-cache": "ng e2e baufi24-disclaimer-e2e --skip-nx-cache --record --key b12a5de1-cce4-4237-a0de-e70ca28c2f4c",
+    "test:e2e:video:skip-nx-cache": "ng e2e video-e2e --skip-nx-cache --record --key b12a5de1-cce4-4237-a0de-e70ca28c2f4c",
     "ci:e2e": "npm run ci:e2e:video && npm run ci:e2e:baufi24-disclaimer",
     "ci:e2e:baufi24-disclaimer": "ng e2e baufi24-disclaimer-e2e --headless",
     "ci:e2e:video": "ng e2e video-e2e --headless",
