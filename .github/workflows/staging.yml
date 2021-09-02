@@ -4,9 +4,9 @@ name: RELEASE ❗ [Staging]
 
 # Controls when the workflow will run
 on:
-  push:
-    branches:
-      - release
+#  push:
+#    branches:
+#      - release
 
   pull_request:
     branches:

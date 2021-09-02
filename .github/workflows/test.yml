@@ -4,9 +4,9 @@ name: DEVELOP 💡 [Test]
 
 # Controls when the workflow will run
 on:
-  push:
-    branches:
-      - develop
+#  push:
+#    branches:
+#      - develop
 
   pull_request:
     branches:
