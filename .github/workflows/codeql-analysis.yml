@@ -12,12 +12,12 @@
 name: "CodeQL [Production, Staging, Test] ⋅ 🚥"
 
 on:
-#  push:
-#    branches: [ main, release, develop ]
+  push:
+    branches: [ main, release, develop ]
   pull_request:
     # The branches below must be a subset of the branches above
-    # branches: [ main, release, develop ]
-    types: [ opened, synchronize, reopened ]
+    branches: [ main, release, develop ]
+    # types: [ opened, synchronize, reopened ]
 jobs:
   analyze:
     name: Analyze
