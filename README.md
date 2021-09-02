@@ -10,8 +10,6 @@
 [![RELEASE - Staging](https://github.com/baufi24-thoschu/ng-elements-poc/actions/workflows/staging.yml/badge.svg?branch=release)](https://github.com/baufi24-thoschu/ng-elements-poc/actions/workflows/staging.yml)
 [![DEVELOP - Test](https://github.com/baufi24-thoschu/ng-elements-poc/actions/workflows/test.yml/badge.svg?branch=develop)](https://github.com/baufi24-thoschu/ng-elements-poc/actions/workflows/test.yml)
 
-<hr>
-
 This project was generated using [Nx](https://nx.dev)
 
 ## Quickstart
