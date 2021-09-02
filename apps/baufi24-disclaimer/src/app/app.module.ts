@@ -4,6 +4,8 @@ import { createCustomElement, NgElementConstructor } from '@angular/elements';
 
 import { VideoModule } from '@baufi24-ng-elements/video';
 
+import { equals } from 'ramda';
+
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -14,6 +16,8 @@ import { AppComponent } from './app.component';
   // bootstrap: [AppComponent]
 })
 export class AppModule implements DoBootstrap {
+  private static readonly zeroElementsInHTMLCollection = 0;
+
   private static readonly customElementName = 'baufi24-disclaimer';
   private readonly ngCustomElement: NgElementConstructor<AppComponent>;
 
@@ -24,11 +28,11 @@ export class AppModule implements DoBootstrap {
   }
 
   ngDoBootstrap(appRef: ApplicationRef): void {
-    const hasCustomElement: any = window.customElements.get(AppModule.customElementName);
+    const htmlCollection: HTMLCollection = window.document.getElementsByTagName(AppModule.customElementName);
 
-    // if(hasCustomElement === undefined)
-    //   appRef.bootstrap(AppComponent);
-    // else
+    if(equals(htmlCollection.length, AppModule.zeroElementsInHTMLCollection))
+      appRef.bootstrap(AppComponent);
+    else
       window.customElements.define(AppModule.customElementName, this.ngCustomElement);
   }
 }
