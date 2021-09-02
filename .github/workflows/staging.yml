@@ -8,6 +8,9 @@ on:
   push:
     branches:
       - release
+    branches-ignore:
+      - 'feature/**'
+
   pull_request:
     branches:
       - release
