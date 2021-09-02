@@ -2,6 +2,7 @@
   "name": "baufi24-ng-elements",
   "version": "0.0.1",
   "license": "MIT",
+  "main": "./dist/apps/baufi24-disclaimer/baufi24-disclaimer.js",
   "bin": {
     "baufi24-disclaimer": "./dist/apps/baufi24-disclaimer/baufi24-disclaimer.js"
   },
