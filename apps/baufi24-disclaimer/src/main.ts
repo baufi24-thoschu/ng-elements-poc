@@ -11,6 +11,7 @@ if (environment.production) enableProdMode();
 platformBrowserDynamic()
   .bootstrapModule(AppModule)
   .then((res: NgModuleRef<AppModule>) => {
-    if (not(environment.production)) window.console.dir(res);
+    if (not(environment.production))
+      window.console.dir(res);
   })
   .catch((err: Error) => console.error(err));

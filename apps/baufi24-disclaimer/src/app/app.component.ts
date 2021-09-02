@@ -23,7 +23,7 @@ export class AppComponent {
   }
 
   public displayOutput(value: string): void {
-    console.log(value);
+    window.console.info(value);
   }
 
   public handleClick(element: Event): void {
