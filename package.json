@@ -2,7 +2,6 @@
   "name": "baufi24-ng-elements",
   "version": "0.0.1",
   "license": "MIT",
-  "main": "./dist/apps/baufi24-disclaimer/baufi24-disclaimer.js",
   "bin": {
     "baufi24-disclaimer": "./dist/apps/baufi24-disclaimer/baufi24-disclaimer.js"
   },
@@ -26,6 +25,8 @@
     "serve:webcomponent": "npx http-server ./dist/apps/baufi24-disclaimer",
     "serve:webcomponent:ssl": "npx http-server ./dist/custom-list -o -a localhost --ssl -K localhost-key.pem -C localhost.pem",
     "storybook:video": "npx ng run video:storybook",
+    "ngrok": "ngrok http --host-header=rewrite 4200",
+    "clean": "concurrently \"npm run clean:dist\" \"npm run clean:node_modules\"",
     "clean:dist": "rimraf dist",
     "clean:node_modules": "rimraf node_modules"
   },
@@ -87,6 +88,7 @@
     "gulp-concat": "^2.6.1",
     "jest": "27.0.3",
     "jest-preset-angular": "9.0.4",
+    "ngrok": "^4.1.0",
     "prettier": "^2.3.1",
     "rimraf": "^3.0.2",
     "ts-jest": "27.0.3",
