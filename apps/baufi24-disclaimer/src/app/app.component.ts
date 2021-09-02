@@ -11,7 +11,7 @@ export class AppComponent {
   public currentInfo: string;
 
   @Input()
-  public items = [{desc: 'Eat burger', id: 1}];
+  public items = [{desc: 'Eat burger and drink beer...', id: 1}];
 
   @Output()
   public itemClicked: EventEmitter<string>;
