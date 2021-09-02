@@ -5,7 +5,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   templateUrl: './video.component.html',
   styleUrls: ['./video.component.scss']
 })
-export class VideoComponent implements OnInit {
+export class VideoComponent /*implements OnInit*/ {
 
   @Input()
   public info: string;
@@ -18,9 +18,7 @@ export class VideoComponent implements OnInit {
     this.emitOutput = new EventEmitter();
   }
 
-  ngOnInit(): void {
-    console.log(this.info);
-  }
+  // ngOnInit(): void {}
 
   public onClick(): void {
     console.log('onClick');
