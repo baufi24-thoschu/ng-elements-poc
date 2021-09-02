@@ -1,12 +1,16 @@
 # ⚓ Baufi24NgElements ⚓
 
+<p style="text-align: center;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Offical_Baufi24_Logo_released_2020.svg/2560px-Offical_Baufi24_Logo_released_2020.svg.png" width="100%">
+</p>
+
+<hr>
+
 [![MAIN - Production](https://github.com/baufi24-thoschu/ng-elements-poc/actions/workflows/production.yml/badge.svg?branch=main)](https://github.com/baufi24-thoschu/ng-elements-poc/actions/workflows/production.yml)
 [![RELEASE - Staging](https://github.com/baufi24-thoschu/ng-elements-poc/actions/workflows/staging.yml/badge.svg?branch=release)](https://github.com/baufi24-thoschu/ng-elements-poc/actions/workflows/staging.yml)
 [![DEVELOP - Test](https://github.com/baufi24-thoschu/ng-elements-poc/actions/workflows/test.yml/badge.svg?branch=develop)](https://github.com/baufi24-thoschu/ng-elements-poc/actions/workflows/test.yml)
 
-<p style="text-align: center;">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Offical_Baufi24_Logo_released_2020.svg/2560px-Offical_Baufi24_Logo_released_2020.svg.png" width="100%">
-</p>
+<hr>
 
 This project was generated using [Nx](https://nx.dev)
 
