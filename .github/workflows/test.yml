@@ -88,13 +88,31 @@ jobs:
       - name: Install Dep
         run: npm ci
 
-      - name: Build App
+      - name: Build webcomponents
         run: npm run build --if-present
 
-      - name: Archive webcomponent
+      - name: Archive webcomponents
         if: success()
         uses: actions/upload-artifact@v2
         with:
           name: webcomponebt_dist
           path: |
             dist/apps
+
+  deploy:
+    name: Second job
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Download artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: webcomponebt_dist
+          path: downloaded_artifact_deploy_dist
+
+      - name: Display structure of downloaded files
+        run: ls -ahl
+        working-directory: downloaded_artifact_deploy_dist
