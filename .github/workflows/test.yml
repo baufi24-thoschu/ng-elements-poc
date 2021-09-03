@@ -114,27 +114,28 @@ jobs:
           name: webcomponebt_dist
           path: downloaded_artifact_deploy_dist
 
-      - name: Display structure of downloaded files
+      - name: Display structure of downloaded files for baufi24-disclaimer
         run: ls -ahl
-        working-directory: downloaded_artifact_deploy_dist
+        working-directory: downloaded_artifact_deploy_dist/baufi24-disclaimer
 
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
-          registry-url: https://npm.pkg.github.com/
-
-      - run: npm version prerelease --preid=ci-$GITHUB_RUN_ID --no-git-tag-version
-      - run: npm pack
-      - name: Upload
-        uses: actions/upload-artifact@v2
-        with:
-          name: package
-          path: "*.tgz"
-
-      - name: Display structure of directory
-        run: ls -ahl
-        working-directory: ./
+#      - name: Use Node.js ${{ matrix.node-version }}
+#        uses: actions/setup-node@v1
+#        with:
+#          node-version: ${{ matrix.node-version }}
+#          registry-url: https://npm.pkg.github.com/
+#
+#      - run: npm version prerelease --preid=ci-$GITHUB_RUN_ID --no-git-tag-version
+#      - run: cd downloaded_artifact_deploy_dist/baufi24-disclaimer && npm pack
+#
+#      - name: Upload
+#        uses: actions/upload-artifact@v2
+#        with:
+#          name: package
+#          path: "*.tgz"
+#
+#      - name: Display structure of directory
+#        run: ls -ahl
+#        working-directory: ./
 
 #      - name: Publish
 #        run: |
