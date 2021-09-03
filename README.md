@@ -9,6 +9,11 @@
 [![ MAIN 🔒 Production ](https://github.com/baufi24-thoschu/ng-elements-poc/actions/workflows/production.yml/badge.svg?branch=main)](https://github.com/baufi24-thoschu/ng-elements-poc/actions/workflows/production.yml)
 [![ RELEASE ❗ Staging ](https://github.com/baufi24-thoschu/ng-elements-poc/actions/workflows/staging.yml/badge.svg?branch=release)](https://github.com/baufi24-thoschu/ng-elements-poc/actions/workflows/staging.yml)
 [![ DEVELOP 💡 Test ](https://github.com/baufi24-thoschu/ng-elements-poc/actions/workflows/test.yml/badge.svg?branch=develop)](https://github.com/baufi24-thoschu/ng-elements-poc/actions/workflows/test.yml)
+[![Dependency Status](https://david-dm.org/baufi24-thoschu/ng-elements-poc.svg)](https://david-dm.org/baufi24-thoschu/ng-elements-poc)
+[![Dev Dependency Status](https://david-dm.org/baufi24-thoschu/ng-elements-poc/dev-status.svg)](https://david-dm.org/baufi24-thoschu/ng-elements-poc?type=dev)
+[![Known Vulnerabilities](https://snyk.io/test/github/baufi24-thoschu/ng-elements-poc/badge.svg)](https://snyk.io/test/github/baufi24-thoschu/ng-elements-poc)
+[![GitHub issues](https://img.shields.io/github/issues/baufi24-thoschu/ng-elements-poc.svg)](https://github.com/baufi24-thoschu/ng-elements-poc/issues)
+[![GitHub license](https://img.shields.io/github/license/baufi24-thoschu/ng-elements-poc.svg)](https://github.com/baufi24-thoschu/ng-elements-poc/blob/master/LICENSE)
 
 This project was generated using [Nx](https://nx.dev)
 
