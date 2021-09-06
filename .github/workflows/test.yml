@@ -45,8 +45,13 @@ jobs:
       - name: Install Dependencies
         run: npm ci
 
+      - name: Linting
+        run: |
+          npm run linting
+
       - name: Unit-Tests
-        run: npm test
+        run: |
+          npm test
 
       - name: e2e-Tests
         run: npm run test:e2e
@@ -83,5 +88,84 @@ jobs:
       - name: Install Dep
         run: npm ci
 
-      - name: Build App
+      - name: Build webcomponents
         run: npm run build --if-present
+
+      - name: Archive webcomponents
+        if: success()
+        uses: actions/upload-artifact@v2
+        with:
+          name: webcomponebt_dist
+          path: |
+            dist/apps
+
+  publish:
+    name: Publish webcomponents to gh npm registry
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Download artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: webcomponebt_dist
+          path: downloaded_artifact_deploy_dist
+
+      - name: Display structure of downloaded files for baufi24-disclaimer
+        run: ls -ahl
+        working-directory: downloaded_artifact_deploy_dist/baufi24-disclaimer
+
+#      - name: Use Node.js ${{ matrix.node-version }}
+#        uses: actions/setup-node@v1
+#        with:
+#          node-version: ${{ matrix.node-version }}
+#          registry-url: https://npm.pkg.github.com/
+#
+#      - run: npm version prerelease --preid=ci-$GITHUB_RUN_ID --no-git-tag-version
+#      - run: cd downloaded_artifact_deploy_dist/baufi24-disclaimer && npm pack
+#
+#      - name: Upload
+#        uses: actions/upload-artifact@v2
+#        with:
+#          name: package
+#          path: "*.tgz"
+#
+#      - name: Display structure of directory
+#        run: ls -ahl
+#        working-directory: ./
+
+#      - name: Publish
+#        run: |
+#          npm version prerelease --preid=ci-$GITHUB_RUN_ID --no-git-tag-version
+#          npm publish --access public
+#        env:
+#          NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH}}
+
+#  - name: update file and push to remote
+#      run: |
+#        echo "Test push commit to the remote in the workflow" >> test.txt
+#
+#        git config --global user.name "github-actions[bot]"
+#        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+#
+#        git add -A
+#        git commit -m "Update test.txt"
+#        git push
+
+#  report:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: actions/checkout@v2
+#        with:
+#          token: ${{ secrets.PAT }}
+#      - name: Create report file
+#        run: date +%s > report.txt
+#      - name: Commit report
+#        run: |
+#          git config --global user.name 'Your Name'
+#          git config --global user.email 'your-username@users.noreply.github.com'
+#          git commit -am "Automated report"
+#          git push

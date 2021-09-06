@@ -11,7 +11,7 @@ export class AppComponent {
   public currentInfo: string;
 
   @Input()
-  public items = [{desc: 'Eat burger', id: 1}];
+  public items = [{desc: 'Eat burger and drink a lot of beer...', id: 1}];
 
   @Output()
   public itemClicked: EventEmitter<string>;
@@ -23,7 +23,7 @@ export class AppComponent {
   }
 
   public displayOutput(value: string): void {
-    console.log(value);
+    window.console.info(value);
   }
 
   public handleClick(element: Event): void {
